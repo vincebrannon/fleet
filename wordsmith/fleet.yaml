@@ -1,0 +1,12 @@
+namespace: wordsmith-app
+kustomize:
+  dir: ./ks
+
+targetCustomizations:
+- name: rke2
+  clusterName: rke2
+  kustomize:
+    dir: patches/rke2
+
+dependsOn:
+  - name: rancher-local-storage-local-storage

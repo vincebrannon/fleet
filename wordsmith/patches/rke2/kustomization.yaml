@@ -1,0 +1,4 @@
+resources:
+- ../../ks
+patches:
+  - service.yaml

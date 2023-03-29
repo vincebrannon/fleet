@@ -1,0 +1,10 @@
+namespace: redis-app
+helm:
+  chart: redis
+  repo: https://charts.bitnami.com/bitnami
+  releaseName: redis-app
+  version: 17.10.3
+
+dependsOn:
+  - name: rancher-local-storage-local-storage
+

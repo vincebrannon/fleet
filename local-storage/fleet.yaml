@@ -1,0 +1,10 @@
+defaultNamespace: kube-system
+helm:
+  chart: local-path-provisioner
+  repo: https://charts.containeroo.ch
+  releaseName: app-local-storage
+  version: 0.0.24
+
+  values:
+    storageClass:
+      defaultClass: true
